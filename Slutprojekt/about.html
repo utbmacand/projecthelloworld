@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a class="logo">John Doe's Portfolio</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">Contact & About</a>
+        </div>
+    </div>
+    <main>
+        <div class="main-container">
+            <h1 class="aboutme">About Me</h1>
+            <div class="portrait-container">
+            <img src="https://images.pexels.com/photos/7170766/pexels-photo-7170766.jpeg" alt="Portrait" class="portrait">
+            </div>
+            <div class="right-container">
+            <div class="aboutme-container">
+                <div class="about_me">
+                 <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate sapien et nibh pellentesque accumsan.<br>
+                       Vestibulum gravida, justo hendrerit posuere porta, risus orci dignissim purus, et pellentesque ipsum purus et erat.<br>
+                       Curabitur finibus cursus magna, eu eleifend leo mattis eu. Nunc at fermentum justo, vulputate dictum nisl.<br>
+                       In hac habitasse platea dictumst. Pellentesque fringilla risus nisl.<br>
+                       Vivamus eget euismod nibh. Sed non lectus semper, fermentum risus nec, imperdiet mauris.<br>
+                       Nam vel sapien ut sapien malesuada feugiat quis ac tellus. Suspendisse dignissim auctor malesuada.<br>
+                       Phasellus nunc leo, laoreet eu erat facilisis, porta posuere sem. Vestibulum ac imperdiet odio.<br>
+                       Duis porta posuere dui, non dictum tellus consectetur a. Sed sit amet mi quis elit ornare scelerisque et et elit.<br>
+                       Nullam eu quam ac nisl dapibus viverra volutpat id orci. Morbi condimentum pellentesque viverra.<br>
+                       Sed scelerisque venenatis lacus, eu scelerisque eros fermentum a. Ut non laoreet lectus.<br>
+                       Mauris semper tristique scelerisque. Nunc blandit turpis rhoncus sapien auctor pellentesque.<br>
+                       Nam mauris ex, ultrices vel pulvinar et, dapibus facilisis ex. Suspendisse potenti.<br>
+                       Duis vitae quam nec dui luctus malesuada vel sed quam.</p>
+                 </div>
+                </div>
+            </div>
+            <div class="contactform-container">
+                <div class="contactform">
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required></select>
+                        
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                        
+                        <label>
+                            <input type="checkbox" name="consent" required> Jag godkänner att mina uppgifter samlas in och behandlas enligt <a id="privacyPolicyLink" class="privacy_policy" href="#">integritetspolicyn</a>.
+                        </label>
+                        <div class="popup-overlay" id="popupOverlay"></div>
+                        <div class="popup" id="popup">
+                            <span class="popup-close" onclick="closePopup()">&times;</span>
+                            <div class="popup-header">Integritetspolicy</div>
+                            <div class="popup-content">
+                                <h2>Policy</h2>
+                                <p>Denna integritetspolicy beskriver hur vi samlar in, använder, lagrar och skyddar dina personuppgifter.</p>
+                                <h2>Insamling av personuppgifter</h2>
+                                <p>Vi samlar in personuppgifter som du frivilligt tillhandahåller via vårt kontaktformulär, inklusive ditt namn, efternamn, land och meddelande.</p>
+                                <h2>Användning av personuppgifter</h2>
+                                <p>Vi använder dina personuppgifter för att svara på dina förfrågningar och tillhandahålla den information eller de tjänster du begär.</p>
+                                <h2>Lagring av personuppgifter</h2>
+                                <p>Vi lagrar dina personuppgifter på ett säkert sätt och behåller dem endast så länge det är nödvändigt för att uppfylla de ändamål för vilka de samlades in.</p>
+                                <h2>Dina rättigheter</h2>
+                                <p>Du har rätt att begära åtkomst till dina personuppgifter, rättelse av felaktiga uppgifter och radering av dina uppgifter. Kontakta oss på info@123.xyz för att göra sådana förfrågningar.</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h3>Footer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="img\facebook.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="img\x.svg" alt="Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="img\linkedin.svg" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img\instagram.svg" alt="Instagram" class="social-icon">
+                    </a>
+                    <a class="disclaimer">icons provided by</a><a class="disclaimer" href="https://icons8.com">Icons8</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

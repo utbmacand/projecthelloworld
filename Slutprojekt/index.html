@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a class="logo">John Doe's Portfolio</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">Contact & About</a>
+        </div>
+    </div>
+    <main>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/1128797/pexels-photo-1128797.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h3>Footer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img\facebook.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="img\x.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="img\linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img\instagram.svg" alt="Instagram" class="social-icon">
+                </a>
+                <a class="disclaimer">icons provided by</a><a class="disclaimer" href="https://icons8.com">Icons8</a>
+        </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                focus: 'center',
+                type: 'loop',
+                speed: 350,
+                autoplay: false,
+                interval: 1000,
+            }).mount();
+
+            document.querySelector('.splide').addEventListener('click', function (event) {
+                var rect = this.getBoundingClientRect();
+                var x = event.clientX - rect.left;
+                if (x < rect.width / 2) {
+                    splide.go('<');
+                } else {
+                    splide.go('>');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
